@@ -60,7 +60,7 @@
     <mu1>30.0</mu1>
     <mu2>30.0</mu2>
   </gazebo>
-
+-->
 
   <!-- grasp plugin -->
   <gazebo>
@@ -91,7 +91,7 @@
     <visual>
       <origin rpy="-1.570796327 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/visual/base_link.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/visual/base_link.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -100,7 +100,7 @@
     <collision>
       <origin rpy="-1.570796327 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/collision/base_link.stl"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/collision/base_link.stl"/>
       </geometry>
     </collision>
   </link>
@@ -113,7 +113,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/visual/link_1.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/visual/link_1.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -122,7 +122,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/collision/link_1.stl"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/collision/link_1.stl"/>
       </geometry>
     </collision>
   </link>
@@ -135,7 +135,7 @@
     <visual>
       <origin rpy="-1.570796327 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/visual/link_2.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/visual/link_2.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -144,7 +144,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/collision/link_2.stl"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/collision/link_2.stl"/>
       </geometry>
     </collision>
   </link>
@@ -157,7 +157,7 @@
     <visual>
       <origin rpy="-1.570796327 0 0" xyz="0 -0.184 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/visual/link_3.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/visual/link_3.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -166,7 +166,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 -0.184 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/collision/link_3.stl"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/collision/link_3.stl"/>
       </geometry>
     </collision>
   </link>
@@ -179,7 +179,7 @@
     <visual>
       <origin rpy="-1.570796327 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/visual/link_4.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/visual/link_4.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -188,7 +188,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/collision/link_4.stl"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/collision/link_4.stl"/>
       </geometry>
     </collision>
   </link>
@@ -201,7 +201,7 @@
     <visual>
       <origin rpy="-1.570796327 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/visual/link_5.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/visual/link_5.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -210,7 +210,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/collision/link_5.stl"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/collision/link_5.stl"/>
       </geometry>
     </collision>
   </link>
@@ -223,7 +223,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/visual/link_6.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/visual/link_6.dae"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -232,7 +232,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/collision/link_6.stl"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/collision/link_6.stl"/>
       </geometry>
     </collision>
   </link>
@@ -245,13 +245,13 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/visual/gripper_base.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/visual/gripper_base.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/visual/gripper_base.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/visual/gripper_base.dae"/>
       </geometry>
     </collision>
   </link>
@@ -264,13 +264,13 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/visual/finger_right.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/visual/finger_right.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/collision/finger_right_collision.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/collision/finger_right_collision.dae"/>
       </geometry>
     </collision>
   </link>
@@ -283,13 +283,13 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/visual/finger_left.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/visual/finger_left.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/stmark/robot_arm_ws/src/kuka_kr210_arm/meshes/collision/finger_left_collision.dae"/>
+        <mesh filename="package://kuka_kr210_arm/meshes/collision/finger_left_collision.dae"/>
       </geometry>
     </collision>
   </link>
@@ -370,7 +370,7 @@
   <gazebo>
     <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
       <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
-      <parameters>/home/stmark/robot_arm_ws/src/kuka_kr210_arm/config/jtc.yaml</parameters>
+      <parameters>package://kuka_kr210_arm/config/jtc.yaml</parameters>
     </plugin>
   </gazebo>
   
