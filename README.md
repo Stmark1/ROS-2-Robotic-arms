@@ -1,4 +1,5 @@
 # ROS 2 Packages
+Desarrollados en ROS Galactic
 
 Paquetes de brazos roboticos listos para trabajar con ROS 2
  - ABB irb 2400
