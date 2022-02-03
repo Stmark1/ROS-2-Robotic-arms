@@ -496,14 +496,6 @@
     <param name="initial_position">0.0</param>   
   </joint> 
 
-
-
-
-
-
-
 </ros2_control>
-
-
 
 </robot>

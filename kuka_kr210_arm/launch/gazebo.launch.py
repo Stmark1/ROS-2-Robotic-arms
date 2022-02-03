@@ -3,11 +3,11 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import ExecuteProcess
 from launch_ros.actions import Node
-# from scripts import GazeboRosPaths
+from scripts import GazeboRosPaths
 
 def generate_launch_description():
     package_share_dir = get_package_share_directory("kuka_kr210_arm")
-    urdf_file = os.path.join(package_share_dir, "urdf", "kr210.urdf")
+    urdf_file = os.path.join(package_share_dir, "urdf", "kr210_.urdf")
 
     return LaunchDescription(
         [
