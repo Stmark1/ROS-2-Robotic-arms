@@ -224,14 +224,14 @@
     <limit effort="0" lower="-1.0472" upper="1.1345" velocity="2.618"/>
   </joint>
   <joint name="joint_4" type="revolute">
-    <origin rpy="0 0 0" xyz="0.258 0 0.135"/>
+    <origin rpy="0 0 0" xyz="0 0 0.135"/>
     <parent link="link_3"/>
     <child link="link_4"/>
     <axis xyz="1 0 0"/>
     <limit effort="0" lower="-3.49" upper="3.49" velocity="6.2832"/>
   </joint>
   <joint name="joint_5" type="revolute">
-    <origin rpy="0 0 0" xyz="0.497 0 0"/>
+    <origin rpy="0 0 0" xyz="0.755 0 0"/>
     <parent link="link_4"/>
     <child link="link_5"/>
     <axis xyz="0 1 0"/>
