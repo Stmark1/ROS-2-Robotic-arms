@@ -29,6 +29,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'trajectory_exec = abb_irb2400.1_controller_test:main',
+            'inverse_kinematics = abb_irb2400.2_inverse_kinematics_solution:main',
+            'sqaure_actionClient = abb_irb2400.3_action_client_interface:main',
         ],
     },
 )

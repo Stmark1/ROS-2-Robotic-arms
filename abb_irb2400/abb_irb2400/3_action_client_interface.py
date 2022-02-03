@@ -17,13 +17,13 @@ class Trajectory_actionClient(Node):
     def __init__(self):
         super().__init__('Trajectory_actionclient')
         self._action_client = ActionClient(self, FollowJointTrajectory, '/joint_trajectory_controller/follow_joint_trajectory')
-        package_share_dir = get_package_share_directory("kuka_kr210_arm")
-        urdf_file= os.path.join(package_share_dir, "urdf", "kr210_.urdf")
+        package_share_dir = get_package_share_directory("abb_irb2400")
+        urdf_file= os.path.join(package_share_dir, "urdf", "irb2400.urdf")
         self.robot_initialize(urdf_file)
 
     def send_goal(self):
         goal_msg = FollowJointTrajectory.Goal()
-        joint_names =['joint_1','joint_2','joint_3','joint_4','joint_5','joint_6','left_gripper_finger_joint','right_gripper_finger_joint']
+        joint_names =['joint_1','joint_2','joint_3','joint_4','joint_5','joint_6','joint_lever_a','joint_lever_b', 'joint_6-tool0']
 
         points = []
         point1 = JointTrajectoryPoint()

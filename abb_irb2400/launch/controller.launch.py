@@ -7,7 +7,7 @@ from scripts import GazeboRosPaths
 
 def generate_launch_description():
     package_share_dir = get_package_share_directory("abb_irb2400")
-    urdf_file = os.path.join(package_share_dir, "urdf", "irb2400.urdf")
+    urdf_file = os.path.join(package_share_dir, "urdf", "irb2400_.urdf")
     
     controller_file = os.path.join(package_share_dir, "config", "jtc.yaml")
     robot_description = {"robot_description": urdf_file}

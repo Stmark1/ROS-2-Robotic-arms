@@ -26,10 +26,10 @@ class Trajectory_publisher(Node):
         publish_topic = "/joint_trajectory_controller/joint_trajectory"
         self.trajectory_publihser = self.create_publisher(JointTrajectory,publish_topic, 10);timer_period = 1
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.joints = ['joint_1','joint_2','joint_3','joint_4','joint_5','joint_6','left_gripper_finger_joint','right_gripper_finger_joint']
+        self.joints = ['joint_1','joint_2','joint_3','joint_4','joint_5','joint_6','joint_lever_a','joint_lever_b', 'joint_6-tool0']
         
-        package_share_dir = get_package_share_directory("kuka_kr210_arm")
-        urdf_file= os.path.join(package_share_dir, "urdf", "kr210_.urdf")
+        package_share_dir = get_package_share_directory("abb_irb2400")
+        urdf_file= os.path.join(package_share_dir, "urdf", "irb2400_.urdf")
         
         ## Toolbox interface
         self.robot_initialize(urdf_file)

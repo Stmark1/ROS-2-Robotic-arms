@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 
-urdf_file=os.path.join("urdf","kr210_.urdf")
+urdf_file=os.path.join("urdf","irb2400_.urdf")
 
 kuka_robot = ikpy.chain.Chain.from_urdf_file(urdf_file)
 T=kuka_robot.forward_kinematics([0] * 9)

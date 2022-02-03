@@ -15,6 +15,8 @@ joint_trajectory_controller:
       - joint_4
       - joint_5
       - joint_6
+      - joint_lever_a
+      - joint_lever_b
       - joint_6-tool0
 
     command_interfaces:
