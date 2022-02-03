@@ -163,6 +163,42 @@
       </material>
     </collision>
   </link>
+  <link name="link_lever_a">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://abb_irb2400/meshes/irb2400/visual/link_lever_a.dae"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.7372549 0.3490196 0.1607843 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://abb_irb2400/meshes/irb2400/collision/link_lever_a.stl"/>
+      </geometry>
+      <material/>
+    </collision>
+  </link>
+  <link name="link_lever_b">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://abb_irb2400/meshes/irb2400/visual/link_lever_b.dae"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.7372549 0.3490196 0.1607843 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://abb_irb2400/meshes/irb2400/collision/link_lever_b.stl"/>
+      </geometry>
+      <material/>
+    </collision>
+  </link>  
   <link name="tool0"/>
   <!-- end of link list -->
   <!-- joint list -->
@@ -207,6 +243,20 @@
     <child link="link_6"/>
     <axis xyz="1 0 0"/>
     <limit effort="0" lower="-6.9813" upper="6.9813" velocity="7.854"/>
+  </joint>
+  <joint name="joint_lever_a" type="continuous">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="link_2"/>
+    <child link="link_lever_a"/>
+    <axis xyz="0 1 0"/>
+    <mimic joint="joint_3" multiplier="1.0"/>
+  </joint>
+  <joint name="joint_lever_b" type="continuous">
+    <origin xyz="-0.18 0 0" rpy="0 0 0"/>
+    <parent link="link_3"/>
+    <child link="link_lever_b"/>
+    <axis xyz="0 1 0"/>
+    <mimic joint="joint_3" multiplier="-1.0"/>
   </joint>
   <joint name="joint_6-tool0" type="fixed">
     <parent link="link_6"/>
